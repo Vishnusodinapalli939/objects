@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      obj = { england: "london", usa: "washington DC", india: "delhi" };
+      obj1 = {};
+      for (i in obj) {
+        obj1[obj[i]] = i;
+      }
+      console.log(obj1);
+    </script>
+  </body>
+</html>

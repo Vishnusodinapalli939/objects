@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /*
+Create a function which takes in an encoded string and returns an object
+according to the following example:
+Examples :
+parseCode("John000Doe000123") ➞ {
+firstName:John,
+lastName: Doe,
+id: 123
+}
+parseCode("michael0smith004331") ➞ {
+firstName: "michael";,
+lastName: "smith",
+id: 4331
+}
+*/
+      arr = [];
+      str = prompt("enter a string :");
+      temp = str.split("0");
+      obj = {};
+      for (i of temp) {
+        if (i != "") {
+          arr.push(i);
+        }
+      }
+      console.log(arr);
+      c = 0;
+      obj = {};
+      obj["firstName"] = arr[0];
+      obj["lastName"] = arr[1];
+      obj["id"] = arr[2];
+      console.log(obj);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        obj=[{name:"jhon",marks:{m1:60,m2:50,m3:90}},
+    {name:"aa",marks:{m1:20,m2:40,m3:50}}];
+    for(i of obj){
+        sum=0
+        for(j in i.marks){
+            sum+=i.marks[j]
+        }
+        i["totalMarks"]=sum;
+    }
+    console.log(obj);
+    </script>
+</body>
+</html>
